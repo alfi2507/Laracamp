@@ -15,4 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');;
+
+// memanggil file login.blade.php
+Route::get('login', function () {
+    return view('login');
+})->name('login');
+
+// memenggil file checkout.blade.php
+Route::get('checkout', function () {
+    return view('checkout');
+})->name('checkout');
+
+// memenggil file success_checkout.blade.php
+Route::get('success-checkout', function () {
+    return view('success_checkout');
+})->name('success-checkout');
